@@ -1,6 +1,0 @@
-def tst(row):
-	payed_minutes = [] #создаем список для хранения новых столбцов
-	new_columns_names = [] #создаем список для хранения имен новых столбцов
-for i in range (1,4):
-	payed_minutes.append(row[i] * 2) # рассчитываем значение нового столбца
-return pd.Series(payed_minutes, index = new_columns_names) #создаем Series объект из всех рассчитанных значений
